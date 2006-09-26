@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:method_name}: function(${3:attribute}){
-	$0
-}${10:,}</string>
+	<string>(function(${1:value}) {
+	${2:$1}$0
+});</string>
+	<key>keyEquivalent</key>
+	<string>^@(</string>
 	<key>name</key>
-	<string>Object Method</string>
+	<string>(function()...})</string>
 	<key>scope</key>
-	<string>source.js</string>
-	<key>tabTrigger</key>
-	<string>:f</string>
+	<string>source.js.prototype</string>
 	<key>uuid</key>
-	<string>77065D69-742A-4FF0-9A41-AD211DFBE72F</string>
+	<string>5F877B41-21B1-4466-9BE4-77D946C01897</string>
 </dict>
 </plist>
