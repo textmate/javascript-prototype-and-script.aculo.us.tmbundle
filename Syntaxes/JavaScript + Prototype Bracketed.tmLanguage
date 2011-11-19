@@ -4,10 +4,6 @@
 <dict>
 	<key>comment</key>
 	<string>This is a wrapper for and adds nested bracket scopes to Prototype &amp; Script.aculo.us (JavaScript). It also allow for embedded ruby source. By Thomas Aylott</string>
-	<key>foldingStartMarker</key>
-	<string>(\{[^\}]*$|\([^\)]*$|&lt;%)</string>
-	<key>foldingStopMarker</key>
-	<string>(^[^\{]*\}|^\s*\)|%&gt;)</string>
 	<key>keyEquivalent</key>
 	<string>^~J</string>
 	<key>name</key>
