@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>comment</key>
 	<string>This is a wrapper for and adds nested bracket scopes to Prototype &amp; Script.aculo.us (JavaScript). It also allow for embedded ruby source. By Thomas Aylott</string>
+	<key>fileTypes</key>
+	<array/>
 	<key>keyEquivalent</key>
 	<string>^~J</string>
 	<key>name</key>
@@ -215,12 +217,22 @@
 				<dict>
 					<key>begin</key>
 					<string>(\{)</string>
-					<key>captures</key>
+					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.scope.js</string>
+							<string>punctuation.section.scope.begin.js</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(\})(,)?\s*</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.scope.end.js</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -228,8 +240,6 @@
 							<string>punctuation.separator.objects.js.prototype</string>
 						</dict>
 					</dict>
-					<key>end</key>
-					<string>(\})(,)?\s*</string>
 					<key>name</key>
 					<string>meta.group.braces.curly</string>
 					<key>patterns</key>
